@@ -1,0 +1,48 @@
+<form [formGroup]="addForm">
+  <h3>רישום ספק</h3>
+    <div>
+      <label>שם חברה:</label>
+      <input type="text" formControlName="companyName">
+      @if (addForm.controls['companyName'].invalid && (addForm.controls['companyName'].dirty || addForm.controls['companyName'].touched)) {
+        <div class="error">חובה למלא את שם החברה</div>
+      }
+    </div>
+  
+    <div>
+      <label>שם נציג:</label>
+      <input type="text" formControlName="representativeName">
+      @if (addForm.controls['representativeName'].invalid && (addForm.controls['representativeName'].dirty || addForm.controls['representativeName'].touched)) {
+        <div class="error">חובה למלא שם נציג</div>
+      }
+    </div>
+  
+    <div>
+      <label>טלפון:</label>
+      <input type="text" formControlName="phone">
+      @if (addForm.controls['phone'].invalid && (addForm.controls['phone'].dirty || addForm.controls['phone'].touched)) {
+        @if (addForm.controls['phone'].errors?.['required']) {
+          <div class="error">יש להזין מספר טלפון</div>
+        }
+        @if (addForm.controls['phone'].errors?.['pattern']) {
+          <div class="error">מספר הטלפון אינו תקין</div>
+        }
+      }
+    </div>
+  
+    <h3>רשימת סחורה</h3>
+    <div formArrayName="products">
+      @for (product of products.controls; track $index) {
+        <div [formGroupName]="$index">
+          <label>מוצר {{ $index + 1 }}:</label>
+          <input type="text" formControlName="productName" placeholder="שם מוצר">
+          <input type="number" formControlName="productPrice" placeholder="מחיר">
+          <input type="number" formControlName="minQuantityOrder" placeholder="כמות מינימלית להזמנה">
+          <button type="button" (click)="removeProduct($index)">❌</button>
+        </div>
+      }
+    </div>
+  
+    <button type="button" (click)="addProduct()">➕ הוסף מוצר</button>
+    <br><br>
+    <button (click)="signUp()" [disabled]="addForm.invalid">הרשמה</button>
+</form>

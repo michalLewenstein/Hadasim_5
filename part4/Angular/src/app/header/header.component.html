@@ -1,0 +1,11 @@
+<ul>
+    <button routerLink="/signup">רישום ספק</button>
+    <button routerLink="/login">התחברות ספק</button>
+    <button routerLink="/grocer">התחברות מנהל</button>
+    <button routerLink="/order">צפייה בהזמנות</button>
+    @if(isManager()){
+       <button routerLink="/product">ביצוע הזמנה</button> 
+    }
+    
+    
+</ul>

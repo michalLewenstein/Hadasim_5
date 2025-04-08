@@ -1,0 +1,33 @@
+<h2>רשימת הזמנות</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>תאריך</th>
+      <th>ספק</th>
+      <th>שם מוצר</th>
+      <th>כמות להזמנה</th>
+      <th>סטטוס</th>
+      <th>שינוי מצב הזמנה</th>
+    </tr>
+  </thead>
+  <tbody>
+    @for (order of orders; track $index) {
+      <tr>
+        <td>{{ order.date }}</td>
+        <td>{{ order.supplier.companyName }}</td>
+        <td>{{ order.product.productName }}</td>
+        <td>{{ order.quantityOrder }}</td>
+        <td>{{ statusMap[order.status] }}</td>
+        <td>
+          @if (order.supplierId == supplierId && statusMap[order.status] == 'מחכה לאישור') {
+            <button (click)="orderConfirmation(order.id)">אישור הזמנה</button>
+          }
+          @if (statusMap[order.status] == 'בתהליך' && supplierId == null) {
+            <button (click)="completedOrder(order.id)">ההזמנה התקבלה</button>
+          }
+        </td>
+      </tr>
+    }
+  </tbody>
+</table>

@@ -1,0 +1,35 @@
+<h2>רשימת מוצרים</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>שם מוצר</th>
+      <th>מחיר ליחידה</th>
+      <th>כמות מינימלית להזמנה</th>
+      <th>ספק</th>
+      <th>כמות להזמנה</th>
+      <th>הזמן סחורה</th>
+    </tr>
+  </thead>
+  <tbody>
+    @for (product of products; track product.id) {
+      <tr>
+        <td data-label="שם מוצר">{{ product.productName }}</td>
+        <td data-label="מחיר ליחידה">{{ product.productPrice }}</td>
+        <td data-label="כמות מינימלית להזמנה">{{ product.minQuantityOrder }}</td>
+        <td data-label="ספק">{{ product.supplier.companyName }}</td>
+        <td data-label="כמות להזמנה">
+          <input 
+            type="number" 
+            [min]="product.minQuantityOrder" 
+            [(ngModel)]="quantities[product.id]"
+            [value]="product.minQuantityOrder"
+          >
+        </td>
+        <td data-label="הזמן סחורה">
+          <button (click)="orderProduct(product)">הזמן</button>
+        </td>
+      </tr>
+    }
+  </tbody>
+</table>

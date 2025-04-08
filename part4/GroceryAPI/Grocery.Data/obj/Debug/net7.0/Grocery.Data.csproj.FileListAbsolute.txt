@@ -1,0 +1,17 @@
+C:\Users\user1\Desktop\Hadasim5\part4\GroceryAPI\Grocery.Data\bin\Debug\net7.0\Grocery.Data.deps.json
+C:\Users\user1\Desktop\Hadasim5\part4\GroceryAPI\Grocery.Data\bin\Debug\net7.0\Grocery.Data.runtimeconfig.json
+C:\Users\user1\Desktop\Hadasim5\part4\GroceryAPI\Grocery.Data\bin\Debug\net7.0\Grocery.Data.dll
+C:\Users\user1\Desktop\Hadasim5\part4\GroceryAPI\Grocery.Data\bin\Debug\net7.0\Grocery.Data.pdb
+C:\Users\user1\Desktop\Hadasim5\part4\GroceryAPI\Grocery.Data\bin\Debug\net7.0\Grocery.Core.dll
+C:\Users\user1\Desktop\Hadasim5\part4\GroceryAPI\Grocery.Data\bin\Debug\net7.0\Grocery.Core.pdb
+C:\Users\user1\Desktop\Hadasim5\part4\GroceryAPI\Grocery.Data\obj\Debug\net7.0\Grocery.Data.csproj.AssemblyReference.cache
+C:\Users\user1\Desktop\Hadasim5\part4\GroceryAPI\Grocery.Data\obj\Debug\net7.0\Grocery.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user1\Desktop\Hadasim5\part4\GroceryAPI\Grocery.Data\obj\Debug\net7.0\Grocery.Data.AssemblyInfoInputs.cache
+C:\Users\user1\Desktop\Hadasim5\part4\GroceryAPI\Grocery.Data\obj\Debug\net7.0\Grocery.Data.AssemblyInfo.cs
+C:\Users\user1\Desktop\Hadasim5\part4\GroceryAPI\Grocery.Data\obj\Debug\net7.0\Grocery.Data.csproj.CoreCompileInputs.cache
+C:\Users\user1\Desktop\Hadasim5\part4\GroceryAPI\Grocery.Data\obj\Debug\net7.0\Grocery.Data.csproj.CopyComplete
+C:\Users\user1\Desktop\Hadasim5\part4\GroceryAPI\Grocery.Data\obj\Debug\net7.0\Grocery.Data.dll
+C:\Users\user1\Desktop\Hadasim5\part4\GroceryAPI\Grocery.Data\obj\Debug\net7.0\refint\Grocery.Data.dll
+C:\Users\user1\Desktop\Hadasim5\part4\GroceryAPI\Grocery.Data\obj\Debug\net7.0\Grocery.Data.pdb
+C:\Users\user1\Desktop\Hadasim5\part4\GroceryAPI\Grocery.Data\obj\Debug\net7.0\Grocery.Data.genruntimeconfig.cache
+C:\Users\user1\Desktop\Hadasim5\part4\GroceryAPI\Grocery.Data\obj\Debug\net7.0\ref\Grocery.Data.dll

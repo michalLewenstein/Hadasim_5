@@ -1,0 +1,28 @@
+
+<form [formGroup]="addForm" (ngSubmit)="login()">
+  <h1>התחברות ספק</h1>
+    <div>
+        <div>
+            <label>שם נציג:</label>
+            <input type="text" formControlName="representativeName">
+            @if (addForm.controls['representativeName'].invalid && (addForm.controls['representativeName'].dirty || addForm.controls['representativeName'].touched)) {
+              <div class="error">חובה למלא שם </div>
+            }
+          </div>
+        
+          <div>
+            <label>טלפון:</label>
+            <input type="text" formControlName="phone">
+            @if (addForm.controls['phone'].invalid && (addForm.controls['phone'].dirty || addForm.controls['phone'].touched)) {
+              @if (addForm.controls['phone'].errors?.['required']) {
+                <div class="error">יש להזין מספר טלפון</div>
+              }
+              @if (addForm.controls['phone'].errors?.['pattern']) {
+                <div class="error">מספר הטלפון אינו תקין</div>
+              }
+            }
+          </div>
+    </div>
+    <button type="submit" [disabled]="addForm.invalid">התחבר</button>
+</form>
+
