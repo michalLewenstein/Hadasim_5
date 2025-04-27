@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "DVa76rOzrM+xxScfHTfR5NMaVcfmcDPoST2QTuo9V6kr6H9z5yC2Yjd6zJe1B6kU5OIUwY1UoQskcZgAZ+am1g==",
+  "dgSpecHash": "L+ahi4STyKXYo6uT+J/VG/v5UMs2TxGWbRX+vEy4RYcRjCpbLCh9eNyoXQDFtsdBu/mQRPg5iCgvgAQEpYFqqw==",
   "success": true,
   "projectFilePath": "C:\\Users\\user1\\Desktop\\Hadasim5\\part4\\GroceryAPI\\Grocery.Data\\Grocery.Data.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\user1\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
     "C:\\Users\\user1\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\user1\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
     "C:\\Users\\user1\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
@@ -57,6 +58,8 @@
     "C:\\Users\\user1\\.nuget\\packages\\system.memory.data\\1.0.2\\system.memory.data.1.0.2.nupkg.sha512",
     "C:\\Users\\user1\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\user1\\.nuget\\packages\\system.reflection\\4.3.0\\system.reflection.4.3.0.nupkg.sha512",
+    "C:\\Users\\user1\\.nuget\\packages\\system.reflection.emit\\4.3.0\\system.reflection.emit.4.3.0.nupkg.sha512",
+    "C:\\Users\\user1\\.nuget\\packages\\system.reflection.emit.ilgeneration\\4.3.0\\system.reflection.emit.ilgeneration.4.3.0.nupkg.sha512",
     "C:\\Users\\user1\\.nuget\\packages\\system.reflection.primitives\\4.3.0\\system.reflection.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\user1\\.nuget\\packages\\system.resources.resourcemanager\\4.3.0\\system.resources.resourcemanager.4.3.0.nupkg.sha512",
     "C:\\Users\\user1\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512",

@@ -15,7 +15,6 @@ export class GetOrderComponent implements OnInit {
     0: 'מחכה לאישור',
     1: 'בתהליך',
     2: 'הושלמה',
-    3: 'סגירת הזמנה'
   };
 
   constructor(private _orderService: OrderService) {}

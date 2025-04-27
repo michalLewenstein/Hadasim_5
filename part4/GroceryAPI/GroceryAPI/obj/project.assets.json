@@ -1328,6 +1328,9 @@
       "Grocery.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "AutoMapper": "9.0.0"
+        },
         "compile": {
           "bin/placeholder/Grocery.Core.dll": {}
         },

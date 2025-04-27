@@ -23,7 +23,7 @@
           @if (order.supplierId == supplierId && statusMap[order.status] == 'מחכה לאישור') {
             <button (click)="orderConfirmation(order.id)">אישור הזמנה</button>
           }
-          @if (statusMap[order.status] == 'בתהליך' && supplierId == null) {
+          @if (statusMap[order.status] == 'בתהליך' && supplierId == 0) {
             <button (click)="completedOrder(order.id)">ההזמנה התקבלה</button>
           }
         </td>

@@ -34,6 +34,7 @@ export class LogInComponent implements OnInit{
       next: (res)=>{
         console.log("התחברות עברה בהצלחה", res);
         localStorage.setItem('supplierId',JSON.stringify(res));
+        localStorage.removeItem('manager')
         this._router.navigate(['/order']);
       },
       error: (err)=>{

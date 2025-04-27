@@ -33,6 +33,7 @@ export class GrocerLogInComponent implements OnInit{
       next: (res)=>{
         console.log("התחברות עברה בהצלחה", res);
         localStorage.setItem('manager',"manager");
+        localStorage.removeItem('supplierId')
         this._router.navigate(['/order']);
       },
       error: (err)=>{

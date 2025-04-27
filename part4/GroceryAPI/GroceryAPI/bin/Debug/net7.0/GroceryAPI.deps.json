@@ -717,6 +717,9 @@
         }
       },
       "Grocery.Core/1.0.0": {
+        "dependencies": {
+          "AutoMapper": "9.0.0"
+        },
         "runtime": {
           "Grocery.Core.dll": {}
         }
