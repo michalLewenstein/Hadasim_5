@@ -16,7 +16,6 @@ builder.Configuration
     .AddJsonFile($"appsettings.{builder.Environment.EnvironmentName}.json", optional: true)
     .AddEnvironmentVariables();
 
-//מניעה לולאה אינסופית בגלל הספק במחלקת מוצר
 builder.Services.AddControllers()
     .AddJsonOptions(options =>
     {
